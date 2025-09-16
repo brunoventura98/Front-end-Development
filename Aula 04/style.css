@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+body {
+    font-family: 'Bitcount Grid Double', sans-serif;
+    box-sizing: border-box;
+    text-align: center; /* centraliza o texto */
+    color: white; /* cor do texto */
+}
+
+#galeria img { /* * chama o id */
+    width: 370px; /* largura */
+    height: 350px; /* altura */
+    /* display: block;  exibe uma embaixo da outra */
+     margin: 20px; /* margem igual para todos os lados */
+    /* margin: 20px 40px;*/
+    /* margin: 20px 40px 70px; */
+    /* margin: 20px 40px 70px 100px; todos as margens diferentes*/
+    /* border-color: #A71126; */
+    /* border-width: 2px;
+    border-style: 2px dotted blue;*/
+    border: 2px dotted #A71126;
+    border-radius: 25px; /* bordas um pouco arredondadas */
+}
+
+.card { /*. chama a class */
+    border: 2px solid;
+    border-radius: 25px;
+    background-color:rgb(167, 17, 160);
+    padding: 20px;
+    height: 30px;
+}
+
+#banner img {
+    margin: 10px 0px;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
