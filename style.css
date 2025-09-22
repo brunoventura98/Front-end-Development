@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 body {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -10,11 +9,9 @@ body {
 }
 
 #banner img {
-  margin: 10px 0px; 
-  width: 1250px;
-  height: 500px;
+  width: 100%;
   border-radius: 0px;
-  padding: 20px;
+  height: 543px;
 }
 
 #maintitle {
@@ -46,7 +43,11 @@ body {
   border-radius: 10px;
   background-color: rgb(248, 193, 193);
   padding:20px;
-  height: 30px;
 }
 
-
+#Copyright {
+  background-color: rgb(190, 2, 2);
+  color: rgb(300,300,300);
+  text-align: center;
+  padding: 32px;
+}
