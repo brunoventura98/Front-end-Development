@@ -1,0 +1,18 @@
+p {
+    /* font-family: arial, calibri, sans-serif; */
+    font-family: Roboto, calibri, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4d3400;
+    text-align: justify;
+    text-indent: 40px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+a {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #9f55c2;
+    text-decoration: none;
+}
