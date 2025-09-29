@@ -1,0 +1,22 @@
+.container {
+    display: flex; // normalmente deixa as coisas uma do lado da outra
+    /* flex-direction: column;
+    flex-direction: row; padrão
+    ignora o padrão do flex (row)
+    flex-direction: column-reverse;  inverte a ordem
+    flex-direction: row-reverse;  inverte a ordem
+
+    flex-wrap: wrap;  quebra a linha
+
+    justify-content: flex-start;  alinha os itens no início do container
+    justify-content: flex-end;  alinha os itens no final do container 
+    justify-content: center;  alinha os itens no centro do container 
+    justify-content: space-between;  alinha os itens com espaço entre eles
+    justify-content: space-around; alinha os itens com espaço ao redor deles */
+    
+}
+
+#modelo-2 {
+    flex-wrap: nowrap; 
+}
+
