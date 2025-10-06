@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+* {
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+#banner { background-color: #F43443; }
+#inicio { background-color: #E8E8E0; }
+#personagens { background-color: #819DF9; }
+#poderes { background-color: #E7D5AB; }
+#viloes { background-color: #555250; }
+#final { background-color: #819DF9; }
+
+#banner {
+    display: flex; 
+    justify-content: center; // Alinhamento horizontal
+    align-items: center; // Alinhamento vertical
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; // Direção da disposição, em coluna ou em linha
+}
+
+.botao {
+    background-color: #62C82E;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 270px;
+    text-align: center;
+    margin: 20px;
+}
+
+.botao:hover {
+        background-color:rgb(63, 139, 24);
+}

@@ -13,10 +13,9 @@
     justify-content: center;  alinha os itens no centro do container 
     justify-content: space-between;  alinha os itens com espaço entre eles
     justify-content: space-around; alinha os itens com espaço ao redor deles */
-    
+
 }
 
 #modelo-2 {
     flex-wrap: nowrap; 
 }
-
