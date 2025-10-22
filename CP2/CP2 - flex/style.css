@@ -16,8 +16,22 @@
     width: 100vw;
 }
 
-#logo {
+h1 {
+    color: #fff;
+    margin: 30px;
+    font-size: 48px;
+}
 
+#botoes {
+
+}
+
+#inicio img {
+    margin: 0 100px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 1000px;
+    height: 500px;
 }
 
 #logo img {
@@ -28,12 +42,26 @@
 .botaocompre {
     background-color: #fff;
     color: #191919;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 270px;
+    text-align: center;
+    margin: 20px;
 }
 
 .botaomais {
     background-color: #fff;
     color: #191919;
     opacity: 0.7;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 270px;
+    text-align: center;
+    margin: 20px;
 }
 
 #produtos {
@@ -41,13 +69,13 @@
     color: #fff;
 }
 
-.produtos-item {
-    border-radius: 0 55px 0 55px;
-}
-
-.produtos-lista {
+.produtos-lista img {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 55px 0 55px;
+    width: 100px;
+    padding: 40px 0 0 40px; 
 }
 
 #maisdetalhes {

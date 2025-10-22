@@ -21,15 +21,16 @@
 
 #banner {
     display: flex; 
-    justify-content: center; // Alinhamento horizontal
-    align-items: center; // Alinhamento vertical
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
 }
 
 #inicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; // Direção da disposição, em coluna ou em linha
+    flex-direction: column; /* Direção da disposição, em coluna ou em linha */
+    justify-content: flex-end;
 }
 
 .botao {
@@ -46,4 +47,91 @@
 
 .botao:hover {
         background-color:rgb(63, 139, 24);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.personagens-item {
+    width: 170px;
+    text-align: center;
+}    
+
+.personagens-item img {
+    border-radius: 100%;
+}    
+
+.personagens-lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    background-color: #4D6DD2;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.poderes-item {
+    border: 10px solid #E7B300;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px 30px;
+    border-radius: 10px;
+}
+
+.poderes-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poderes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#viloes {
+    padding: 70px 40px;
+}
+
+.viloes-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viloes-lista .personagens-item {
+    margin: 0 10px;
+}
+
+#final {
+    padding-bottom: 0;
+}
+    
+#final h2 {
+    margin-bottom: 10px;
+}
+
+.final-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.princesas {
+    width: 170px;
+    height: 180px;
+    /* object-fit: cover; */
+    object-fit: contain;
 }
