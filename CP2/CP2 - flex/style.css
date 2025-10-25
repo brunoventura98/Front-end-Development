@@ -5,93 +5,232 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
+/* === SEÇÃO 1: BANNER === */
+
 #banner {
-    background-image: url('./images/background.png');
+    background: url('./images/background.png') no-repeat center center;
+    background-size: cover;
     height: 100vh;
     max-height: 600px;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.texto-banner {
+    flex: 1;
+    margin-left: 40px;
+}
+
+#fone {
+    margin: auto;
+    width: 400px;
 }
 
 h1 {
     color: #fff;
-    margin: 30px;
-    font-size: 48px;
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
+/* Botões */
 #botoes {
-
-}
-
-#inicio img {
-    margin: 0 100px 0 0;
     display: flex;
-    justify-content: flex-end;
-    width: 1000px;
-    height: 500px;
+    gap: 20px;
 }
 
-#logo img {
-    width: 200px;
-    padding: 40px 0 0 40px;
-}
-
-.botaocompre {
-    background-color: #fff;
-    color: #191919;
+.botaocompre,
+.botaomais {
     border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 30px;
+    padding: 15px 35px;
     text-decoration: none;
-    width: 270px;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
     text-align: center;
-    margin: 20px;
 }
 
 .botaomais {
-    background-color: #fff;
-    color: #191919;
     opacity: 0.7;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 30px;
-    text-decoration: none;
-    width: 270px;
-    text-align: center;
-    margin: 20px;
 }
+
+/* === SEÇÃO 2: PRODUTOS === */
 
 #produtos {
     background-color: #202832;
+    text-align: center;
+    padding: 20px 0;
     color: #fff;
 }
 
-.produtos-lista img {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 0 55px 0 55px;
-    width: 100px;
-    padding: 40px 0 0 40px; 
+#produtos h2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
+
+.produtos-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.produtos-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    border-radius: 0 55px 0 55px;
+    color: #000;
+}
+
+.produtos-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 0 55px 0 0;
+    object-fit: cover;
+}
+
+.produtos-item h4 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.produtos-item h3 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* Prof, se você olhar esse código, me explica porque esse botão ta assim pfv */
+
+.botaoprodutos {
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+/* === SEÇÃO 3: MAIS DETALHES === */
 
 #maisdetalhes {
     background-color: #DBDBDB;
+    padding: 80px 0;
     color: #191919;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detalhes-conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+#maisdetalhes img {
+    max-width: 500px;
+    border-radius: 0 140px 0 0;
 }
 
 .container-detalhes {
+    margin-bottom: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 300px;
 }
+
+.container-detalhes h2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+
+.container-detalhes p {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+#maisdetalhes span {
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* === SEÇÃO 4: RODAPÉ === */
 
 #final {
     background-color: #202832;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    text-align: left;
 }
 
-.footer {
+#final h2 {
+    font-weight: 300;
+    font-size: 100;
+}
+
+#final h3 {
+    font-weight: 700;
+} 
+
+#final h4 {
+    font-weight: 300;
     display: flex;
+    flex-wrap: wrap;
+}
+
+#final h5 {
+    font-weight: 700;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#final .redes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#final a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
