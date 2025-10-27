@@ -121,8 +121,6 @@ h1 {
     margin-top: 10px;
 }
 
-/* Prof, se você olhar esse código, me explica porque esse botão ta assim pfv */
-
 .botaoprodutos {
     border-radius: 30px;
     padding: 15px 35px;
@@ -162,9 +160,13 @@ h1 {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     height: 400px;
-    width: 300px;
+    width: 400px;
+}
+
+.container-detalhes p {
+    padding-bottom: 20px;
 }
 
 .container-detalhes h2 {
