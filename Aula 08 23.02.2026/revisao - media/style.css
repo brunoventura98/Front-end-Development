@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border_box;
+    font-family: Calibri;
+}
+
+.menu {
+    background-color:#0c4d54;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.menu_list {
+    display: flex;
+    list-style: none;
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 25px;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            color: #6ee6f3;
+        }
+    }
+}
+
+.ferias {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ferias_card {
+    width: 23%;
+    margin: 30px 0;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    a {
+        background-color: #0c4d54;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.metas {
+    background-image: url(./imagens/fundo.jpg);
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+    form {
+        background-color: #ffffff98;
+        width: 740px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.metas_item {
+    margin: 0 20px 30px;
+}
+
+@media (max-width 600px) {
+    .ferias {
+        flex-wrap: wrap;
+    }
+
+    .ferias_card {
+        width: 45%;
+    }
+} 
+
+@media (max-width 500px) {
+    .ferias {
+        flex-wrap: wrap;
+    }
+    
+    .ferias_card {
+        width: 90%;
+    }
+} 
