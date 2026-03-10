@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@font-face {
+  font-family: "Roboto Mono Regular";
+  src: url(../fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono Medium";
+  src: url(../fonts/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono Semibold";
+  src: url(../fonts/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono Bold";
+  src: url(../fonts/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono Light";
+  src: url(../fonts/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto Mono Thin";
+  src: url(../fonts/RobotoMono-Thin.ttf);
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Roboto Mono Regular", "Open Sans Regular", "sans-serif";
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #111111;
+  color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  
+  nav {
+    height: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    
+    ul {
+      display: flex;
+      
+      li {
+        padding: 16px 0;
+        text-align: center;
+        width: 33%;
+        
+        a {
+          color: darkgray;
+          text-decoration: none;
+          
+          &:hover {
+            color: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+}
+
+header nav ul li .active {
+  color: #f5f5f5;
+}
+
+.wrapper {
+  padding: 0 145px;
+}
+
+.footer {
+  align-items: center;
+  background: #2b2b2b;
+  color: #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer__item {
+  width: 30%;
+}
+
+.footer__icone {
+  height: 20px;
+  margin: 0 5px;
+  width: 20px;
+}
+
+.home-navigation {
+  background: #2B2B2B;
+  color: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 50px;
+  width: 100%;
+}
+
+.home-navigation__item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.home-navigation__item--selected {
+  color: #E8B02C;
+  transition: all 0.5s;
+}
+
+.home-navigation__item--selected:after {
+  background: #2b2b2b;
+  content: "";
+  height: 40px;
+  position: absolute;
+  top: 59px;
+  transform: rotate(45deg);
+  width: 40px;
+}
+
+.home-navigation__item--selected .home-navigation__icon {
+  fill: #E8B02C;
+}
+
+.home-navigation__icon {
+  fill: #e4e4e4;
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+.home-navigation__title {
+  z-index: 1;
+}
+
+.home-navigation__item + .home-navigation__item {
+  border-left: 2px solid #333;
+}
+
+.home-section {
+  background-color: #333;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.home-section__img {
+  height: 100%;
+  width: 80%;
+}
+
+.home-section__info {
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 40px;
+  width: 20%;
+}
+
+.home-section__title {
+  color: #e4e4e4;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.home-section__list li {
+  color: #e4e4e4;
+  font-size: 20px;
+  height: 50px;
+}
+
+.home-section__button {
+  background: #E8B02C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto Mono Regular";
+  font-size: 15px;
+  height: 50px;
+  width: 160px;
+  color: #000;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: background .5s ease-in-out;
+
+  &:hover {
+    background: #a77d1b;
+  }
+}
+
+.home-banner {
+  background-image: url("../img/producao-de-video-EAD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.home-banner__background {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-section__about-us {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 0;
+}
+
+.home-section__about-us .about-us__item {
+  color: #c9c9c9;
+  text-align: center;
+  max-width: 300px;
+  
+  svg {
+    margin-bottom: 20px;
+  }
+}
+
+.home-section__filmes {
+  height: 540px;
+}
+
+.home-section__filmes .home-section__img {
+  background-image: url("../img/filme.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-section__filmes .filmes__info {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.home-section__musicas {
+  height: 550px;
+}
+
+.home-section__musicas .home-section__img {
+  background-image: url("../img/musica.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-section__contato {
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.home-section__contato .contato__form {
+  color: #c9c9c9;
+  width: 350px;
+}
+
+.home-section__contato .contato__title {
+  font-size: 24px;
+  margin: 10px auto 30px;
+  text-align: center;
+}
+
+.home-section__contato .contato__item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.home-section__contato .contato__item .item__label {
+  margin-bottom: 10px;
+}
+
+.home-section__contato .contato__item .item__input, .home-section__contato .contato__item .item__textarea {
+  background: transparent;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Roboto Mono Regular";
+  padding-left: 10px;
+}
+
+.home-section__contato .contato__item .item__input:focus, .home-section__contato .contato__item .item__textarea:focus {
+  border-color: #E8B02C;
+  outline: none;
+}
+
+.home-section__contato .contato__item .item__input {
+  height: 40px;
+}
+
+.home-section__contato .contato__item .item__textarea {
+  height: 100px;
+  padding: 10px;
+  resize: none;
+}
+
+.home-section__contato .contato__button {
+  text-align: right;
+}
+
+.home-section__contato .contato__button-btn {
+  background: #E8B02C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto Mono Regular";
+  font-size: 15px;
+  height: 40px;
+  width: 145px;
+  transition: background .5s ease-in-out;
+
+  &:hover {
+    background: #a77d1b;
+  }
+}
+
