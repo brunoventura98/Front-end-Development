@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #003087;
+}
+
+/* HEADER */
+#header {
+  background-color: #003087;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+#header .logo i {
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+/* ÍCONES NO MENU */
+.menu i {
+  margin-right: 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu a:hover i {
+  color: #1F51FF;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #1F51FF;
+}
+
+.botao-inscrever {
+  background-color: #1F51FF;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-inscrever:hover {
+  background-color: #FFFFFF;
+  color: #003087;
+}
+
+/* SEÇÕES */
+.container {
+  padding: 60px 10%;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.container img {
+  width: 70%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.container.azul {
+  background-color: #E6ECFF;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botao-comprar, .botao-video {
+  background-color: #003087;
+  color: #FFFFFF;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.botao-comprar:hover, .botao-video:hover {
+  background-color: #1F51FF;
+}
+
+/* CARDS (MAIS INFORMAÇÕES) */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.mais-informacoes {
+  flex: 1 1 45%;
+  max-width: 500px;
+  background-color: #F2F5FF;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.mais-informacoes img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mais-informacoes h3 {
+  font-size: 1.5rem;
+  color: #003087;
+  margin: 10px 0 5px 0;
+}
+
+.mais-informacoes p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.mais-informacoes:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* RODAPÉ */
+#footer {
+  background-color: #003087;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 10%;
+  color: #FFFFFF;
+}
+
+#footer h2, 
+#footer h3, 
+#footer p, 
+#footer a {
+  color: #FFFFFF;
+}
+
+#footer a {
+  display: block;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+#footer a:hover {
+  color: #1F51FF;
+}
