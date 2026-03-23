@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: auto;
+    padding: 4rem;
+}
+
+.btn {
+    border: 2px solid #ed145b;
+    border-radius: 10px;
+    color: #ed145b;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    width: fit-content;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ed145b;
+    color: #fff;
+}
+
+.box {
+    background-color: #2d57ca;
+    width: 450px;
+    height: 250px;
+    padding: 20px;
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+
+    &:hover {
+        background-color: #ed145b;
+    }
+}
+
+
+i {
+    color: #fff;
+    font-size: 5rem;
+    position: relative;
+}
+
+.box:hover i {
+    // nome / duração / trasição / delay / repetições / direção
+    // animation: rocket 3s ease 2s 2 reverse;
+    animation: rocket 3s ease-in-out infinite alternate;
+}
+
+.text {
+    font-weight: 900;
+    font-size: 5em;
+    color: #181818;
+    border-top: 5px dotted #181818;
+    border-bottom: 5px dotted #181818;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@keyframes rocket {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 5rem);
+    }
+
+    50% {
+        top: calc(100% - 5rem);
+        left: calc(100% - 5rem);
+    }
+
+    75% {
+        top: calc(100% - 5rem);
+        left: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+
