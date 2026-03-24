@@ -1,0 +1,60 @@
+.lance {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 70px 10px;
+    align-items: end;
+    position: relative;
+
+    img {
+        object-fit: contain;
+        z-index: 1;
+    }
+}
+
+.lance__bola {
+    width: 130px;
+    bottom: 100px;
+    left: 100px;
+    position: absolute;
+    animation: bola 5s ease-out 3s infinite;
+}
+
+.lance__gol {
+    width: 350px;
+    transform: scaleX(-1)
+}
+
+@keyframes bola {
+    0% {
+        left: 100px;
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+    80% {
+        left: 75%;
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+
+    82% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gol h2 {
+    margin: 0 auto;
+    padding: 70px 0 100px;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 120px;
+    text-align: center;
+}
