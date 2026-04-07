@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="gol.css">
+    <link rel="stylesheet" href="camisa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Exercicio Animações</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#time">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gol">Penalti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#camisa">Personalize sua camisa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="time" class="time">
+        <div class="time__filter flex--sb">
+            <div id="all" class="time__filter-item">
+                Todos
+            </div>
+            <div id="atacante" class="time__filter-item">
+                Atacante
+            </div>
+            <div id="meia" class="time__filter-item">
+                Meia
+            </div>
+             <div id="lateral" class="time__filter-item">
+                Lateral
+            </div>
+            <div id="zagueiro" class="time__filter-item">
+                Zagueiro
+            </div>
+            <div id="goleiro" class="time__filter-item">
+                Goleiro
+            </div>
+        </div>
+
+        <div class="time__lista flex--ct">
+            <div class="time__jogando atacante">
+                <h3 class="time__jogando-nome">Estevão</h3>
+                <img src="./img/jogadores/estevao.jpeg" alt="Estevão" title="Estevao">
+            </div>
+            <div class="time__jogando atacante">
+                <h3 class="time__jogando-nome">Paulinho</h3>
+                <img src="./img/jogadores/paulinho.jpeg" alt="Paulinho" title="Paulinho">
+            </div>
+            <div class="time__jogando atacante">
+                <h3 class="time__jogando-nome">Victor Roque</h3>
+                <img src="./img/jogadores/roque.jpeg" alt="Roque" title="Roque">
+            </div>
+            <div class="time__jogando meia">
+                <h3 class="time__jogando-nome">Emiliano Martinez</h3>
+                <img src="./img/jogadores/martinez.jpeg" alt="Emiliano Martinez" title="Emiliano Martinez">
+            </div>
+            <div class="time__jogando meia">
+                <h3 class="time__jogando-nome">Raphael Veiga</h3>
+                <img src="./img/jogadores/veiga.jpeg" alt="Raphael Veiga" title="Raphael Veiga">
+            </div>
+            <div class="time__jogando lateral">
+                <h3 class="time__jogando-nome">Richard Rios</h3>
+                <img src="./img/jogadores/rios.jpeg" alt="Richard Rios" title="Richard Rios">
+            </div>
+            <div class="time__jogando lateral">
+                <h3 class="time__jogando-nome">Joaquin Piquerez</h3>
+                <img src="./img/jogadores/piquerez.jpeg" alt="Joaquin Piquerez" title="Joaquin Piquerez">
+            </div>
+            <div class="time__jogando lateral">
+                <h3 class="time__jogando-nome">Augustin Giay</h3>
+                <img src="./img/jogadores/giay.jpeg" alt="Augustin Giay" title="Augustin Giay">
+            </div>
+            <div class="time__jogando zagueiro">
+                <h3 class="time__jogando-nome">Gustavo Gomez</h3>
+                <img src="./img/jogadores/gomez.jpeg" alt="Gustavo Gomez" title="Gustavo Gomez">
+            </div>
+            <div class="time__jogando zagueiro">
+                <h3 class="time__jogando-nome">Gustavo Gomez</h3>
+                <img src="./img/jogadores/gomez.jpeg" alt="Gustavo Gomez" title="Gustavo Gomez">
+            </div>
+            <div class="time__jogando zagueiro">
+                <h3 class="time__jogando-nome">Murilo</h3>
+                <img src="./img/jogadores/murilo.jpeg" alt="Murilo" title="Murilo">
+            </div>
+            <div class="time__jogando goleiro">
+                <h3 class="time__jogando-nome">Weverton</h3>
+                <img src="./img/jogadores/weverton.jpeg" alt="Weverton" title="Weverton">
+            </div>
+        </div>
+    </section>
+    
+    <section id="gol" class="lance flex--end">
+        <img class="lance__gol" src="./img/gol.png" alt="">
+        <img class="lance__bola" src="./img/bola.png" alt="">
+    </section>
+    
+    <div data-aos="zoom-in">
+        <div class="gol">
+            <h2>Gooooooool!!!</h2>
+        </div>
+    </div> 
+
+    <section class="camisa" id="camisa">
+        <div class="camisa__content flex--sb">
+            <form action="">
+                <h2>Personalize sua camisa</h2>
+
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <input type="text" name="numero" id="numero" placeholder="Digite um número">
+                <input type="button" id="btn" value="enviar">
+            </form>
+
+            <div class="camisa__modelo">
+                <img src="./img/camisa.png" alt="Camisa do time">
+                <span id="camisa__nome" class="camisa__text">Seu nome</span>
+                <span id="camisa__numero" class="camisa__text">Nº</span>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

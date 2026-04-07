@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+@import url('./css/time.css');
+@import url('./css/gol.css');
+@import url('./css/camisa.css');
+
+:root {
+    --primary: #006135;
+    --secondary: #adffbf;
+    --tertiary: #00311b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", Roboto, sans-serif;
+}
+
+.flex--ct {
+    display: flex;
+    justify-content: center;
+}
+
+.flex--sb {
+    display: flex;
+    justify-content: space-between;
+}   
+
+.flex--end {
+    display: flex;
+    justify-content: end;
+}

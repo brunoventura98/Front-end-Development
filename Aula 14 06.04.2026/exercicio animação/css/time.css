@@ -1,0 +1,93 @@
+.time {
+    background-color: var(--secondary);
+    padding-top: 50px;
+}
+
+.time__filter {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0 30px;
+}
+
+.time__filter-item {
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+
+    &:hover {
+        background: var(--primary);
+        color: #fff;
+    }
+}
+
+.time__lista {
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.time__jogando {
+    background-color: #fff;
+    height: 350px;
+    width: 30%;
+    margin: 2% 1.5%;
+    max-width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        width: 90%;
+        margin: 45px auto;
+        height: 290px;
+        object-fit: cover;
+        object-position: top; 
+    }
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:before {
+        background: url(../img/detail.png);
+        background-size: contain;
+    }
+
+    &:after {
+        background: url(../img/moldura.png);
+        background-size: contain;
+    }
+}
+
+.time__jogando.disable {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.time__jogando-nome {
+    color: var(--primary);
+    text-align: center;
+    top: 25px;
+    left: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+}
