@@ -1,0 +1,100 @@
+@media (max-width: 900px) {
+  .pokemons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pokemons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cartas-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta-visual-side {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #integrantes h2 {
+    font-size: 2rem;
+  }
+
+  .inicio-box h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 14px 20px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(251, 246, 243, 0.97);
+    padding: 24px 20px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .moldura-inicio {
+    width: 260px;
+  }
+
+  .moldura-wrapper h1 {
+    font-size: 0.65rem;
+    white-space: normal;
+    width: 80%;
+  }
+
+  .inicio-box h1 {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+
+  .pokemons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-title {
+    font-size: 1.6rem;
+  }
+
+  .footer-content {
+    padding: 32px 24px;
+  }
+
+  #integrantes h2 {
+    font-size: 1.4rem;
+  }
+
+  .pokemons-sidebar h2 {
+    font-size: 1rem;
+  }
+}
