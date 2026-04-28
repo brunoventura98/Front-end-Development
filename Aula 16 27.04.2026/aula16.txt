@@ -1,0 +1,8 @@
+Aula da professora substituta - Comandos 
+
+npm create vite@latest aula-tailwind-html -- --template vanilla
+> y
+> React 
+npm install
+npm install tailwindcss @tailwindcss/vite
+npm run dev 

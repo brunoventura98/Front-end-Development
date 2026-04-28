@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula-tailwind-html</title>
+  </head>
+  <body class="min-h-screen bg_slate-100 text-slate-900">
+    <h1 
+    class="p-8 text-4xl font-bold text-pink-600"
+    >
+     Olá, Tailwind!
+    </h1>
+
+    <header class="bg-slate-950 px-6 py-5 text-white">
+      <div class="mx-auto flex max-w-6xl items-center justify-between">
+        <h2 class="text-xl font-bold">Dev Experience</h2>
+
+        <nav class="gap-6 text-sm md:flex">
+          <a href="#" class="hover:text-pink-400">Sobre</a>
+          <a href="#" class="hover:text-pink-400">Palestras</a>
+          <a href="#" class="hover:text-pink-400">Inscrição</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
