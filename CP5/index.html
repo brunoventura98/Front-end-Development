@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <title>Checkpoint 5</title>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">CP 5</span>
+    <button class="hamburger" id="hamburger" aria-label="Menu"></button>
+    <ul id="nav-menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#integrantes">Integrantes</a></li>
+      <li><a href="#pokemons">Pokemons</a></li>
+      <li><a href="#cartas">Cartas</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== SESSÃO 1 — INÍCIO ===== -->
+  <section id="inicio">
+    <div class="inicio-gradient-overlay"></div>
+    <div class="inicio-content">
+      <div class="moldura-wrapper">
+        <img src="images/global/moldura.png" alt="" class="moldura-inicio" />
+        <h1>Checkpoint Project</h1>
+      </div>
+      <a href="#integrantes" class="btn-start">Start</a>
+    </div>
+  </section>
+
+  <!-- ===== SESSÃO 2 — INTEGRANTES ===== -->
+  <section id="integrantes">
+    <h2>Choose your character</h2>
+    <div class="character-box">
+      <ul class="character-list">
+        <li><span class="arrow">&#9658;</span> Bruno Ventura - RM: 568316</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SESSÃO 3 — POKÉMONS ===== -->
+  <section id="pokemons">
+    <div class="pokemons-wrapper">
+      <div class="pokemons-sidebar">
+        <h2>Descubra os pokemons</h2>
+        <ul class="filter-list">
+          <li class="active" data-filter="todos"><span class="arrow">&#9658;</span> Todos</li>
+          <li data-filter="agua"><span class="arrow">&#9658;</span> Água</li>
+          <li data-filter="fogo"><span class="arrow">&#9658;</span> Fogo</li>
+          <li data-filter="planta"><span class="arrow">&#9658;</span> Planta</li>
+          <li data-filter="eletrico"><span class="arrow">&#9658;</span> Elétrico</li>
+          <li data-filter="gelo"><span class="arrow">&#9658;</span> Gelo</li>
+        </ul>
+      </div>
+
+      <div class="pokemons-grid" id="pokemon-grid">
+        <div class="pokemon-card" data-type="planta"
+             data-name="Bulbasaur" data-altura="0.7 m" data-peso="6.9 kg"
+             data-categoria="Seed" data-habilidade="Overgrow"
+             data-tipo-icon="🌿" data-fraqueza-icon="🔥"
+             data-evo1="images/pokemons/Bulbasaur.png"
+             data-evo2="images/pokemons/Bulbasaur-ev2.png"
+             data-evo3="images/pokemons/Bulbasaur-ev3.png">
+          <img src="images/pokemons/bulbasaur.png" alt="Bulbasaur" />
+        </div>
+
+        <div class="pokemon-card" data-type="fogo"
+             data-name="Charmander" data-altura="0.6 m" data-peso="8.5 kg"
+             data-categoria="Lizard" data-habilidade="Blaze"
+             data-tipo-icon="🔥" data-fraqueza-icon="💧"
+             data-evo1="images/pokemons/charmander.png">
+          <img src="images/pokemons/charmander.png" alt="Charmander" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Squirtle" data-altura="0.5 m" data-peso="9.0 kg"
+             data-categoria="Tiny Turtle" data-habilidade="Torrent"
+             data-tipo-icon="💧" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/squirtle.png">
+          <img src="images/pokemons/squirtle.png" alt="Squirtle" />
+        </div>
+
+        <div class="pokemon-card" data-type="eletrico"
+             data-name="Pikachu" data-altura="0.4 m" data-peso="6.0 kg"
+             data-categoria="Mouse" data-habilidade="Static"
+             data-tipo-icon="⚡" data-fraqueza-icon="🌍"
+             data-evo1="images/pokemons/pikachu.png">
+          <img src="images/pokemons/pikachu.png" alt="Pikachu" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Clefairy" data-altura="0.6 m" data-peso="7.5 kg"
+             data-categoria="Fairy" data-habilidade="Cute Charm"
+             data-tipo-icon="🌸" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/clefairy.png">
+          <img src="images/pokemons/clefairy.png" alt="Clefairy" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Eevee" data-altura="0.3 m" data-peso="6.5 kg"
+             data-categoria="Evolution" data-habilidade="Run Away"
+             data-tipo-icon="🌟" data-fraqueza-icon="🥊"
+             data-evo1="images/pokemons/eevee.png">
+          <img src="images/pokemons/eevee.png" alt="Eevee" />
+        </div>
+
+        <div class="pokemon-card" data-type="gelo"
+             data-name="Snorlax" data-altura="2.1 m" data-peso="460 kg"
+             data-categoria="Sleeping" data-habilidade="Immunity"
+             data-tipo-icon="⬜" data-fraqueza-icon="🥊"
+             data-evo1="images/pokemons/snorlax.png">
+          <img src="images/pokemons/snorlax.png" alt="Snorlax" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Meowth" data-altura="0.4 m" data-peso="4.2 kg"
+             data-categoria="Scratch Cat" data-habilidade="Pickup"
+             data-tipo-icon="⬜" data-fraqueza-icon="🥊"
+             data-evo1="images/pokemons/meowth.png">
+          <img src="images/pokemons/meowth.png" alt="Meowth" />
+        </div>
+
+        <div class="pokemon-card" data-type="fogo"
+             data-name="Jigglypuff" data-altura="0.5 m" data-peso="5.5 kg"
+             data-categoria="Balloon" data-habilidade="Cute Charm"
+             data-tipo-icon="🌸" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/jigglypuff.png">
+          <img src="images/pokemons/jigglypuff.png" alt="Jigglypuff" />
+        </div>
+
+        <div class="pokemon-card" data-type="gelo"
+             data-name="Lapras" data-altura="2.5 m" data-peso="220 kg"
+             data-categoria="Transport" data-habilidade="Water Absorb"
+             data-tipo-icon="💧" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/lapras.png">
+          <img src="images/pokemons/lapras.png" alt="Lapras" />
+        </div>
+
+        <div class="pokemon-card" data-type="fogo"
+             data-name="Ponyta" data-altura="1.0 m" data-peso="30 kg"
+             data-categoria="Fire Horse" data-habilidade="Run Away"
+             data-tipo-icon="🔥" data-fraqueza-icon="💧"
+             data-evo1="images/pokemons/ponyta.png">
+          <img src="images/pokemons/ponyta.png" alt="Ponyta" />
+        </div>
+
+        <div class="pokemon-card" data-type="gelo"
+             data-name="Abra" data-altura="0.9 m" data-peso="19.5 kg"
+             data-categoria="Psi" data-habilidade="Synchronize"
+             data-tipo-icon="🔮" data-fraqueza-icon="⬛"
+             data-evo1="images/pokemons/abra.png">
+          <img src="images/pokemons/abra.png" alt="Abra" />
+        </div>
+
+        <div class="pokemon-card" data-type="planta"
+             data-name="Oddish" data-altura="0.5 m" data-peso="5.4 kg"
+             data-categoria="Weed" data-habilidade="Chlorophyll"
+             data-tipo-icon="🌿" data-fraqueza-icon="🔥"
+             data-evo1="images/pokemons/oddish.png">
+          <img src="images/pokemons/oddish.png" alt="Oddish" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Psyduck" data-altura="0.8 m" data-peso="19.6 kg"
+             data-categoria="Duck" data-habilidade="Damp"
+             data-tipo-icon="💧" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/psyduck.png">
+          <img src="images/pokemons/psyduck.png" alt="Psyduck" />
+        </div>
+
+        <div class="pokemon-card" data-type="eletrico"
+             data-name="Voltorb" data-altura="0.5 m" data-peso="10.4 kg"
+             data-categoria="Ball" data-habilidade="Soundproof"
+             data-tipo-icon="⚡" data-fraqueza-icon="🌍"
+             data-evo1="images/pokemons/voltorb.png">
+          <img src="images/pokemons/voltorb.png" alt="Voltorb" />
+        </div>
+
+        <div class="pokemon-card" data-type="gelo"
+             data-name="Krabby" data-altura="0.4 m" data-peso="6.5 kg"
+             data-categoria="River Crab" data-habilidade="Hyper Cutter"
+             data-tipo-icon="💧" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/krabby.png">
+          <img src="images/pokemons/krabby.png" alt="Krabby" />
+        </div>
+
+        <div class="pokemon-card" data-type="gelo"
+             data-name="Pidgey" data-altura="0.3 m" data-peso="1.8 kg"
+             data-categoria="Tiny Bird" data-habilidade="Keen Eye"
+             data-tipo-icon="🌬️" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/pidgey.png">
+          <img src="images/pokemons/pidgey.png" alt="Pidgey" />
+        </div>
+
+        <div class="pokemon-card" data-type="planta"
+             data-name="Caterpie" data-altura="0.3 m" data-peso="2.9 kg"
+             data-categoria="Worm" data-habilidade="Shield Dust"
+             data-tipo-icon="🐛" data-fraqueza-icon="🔥"
+             data-evo1="images/pokemons/caterpie.png">
+          <img src="images/pokemons/caterpie.png" alt="Caterpie" />
+        </div>
+
+        <div class="pokemon-card" data-type="agua"
+             data-name="Slowpoke" data-altura="1.2 m" data-peso="36 kg"
+             data-categoria="Dopey" data-habilidade="Oblivious"
+             data-tipo-icon="💧" data-fraqueza-icon="⚡"
+             data-evo1="images/pokemons/slowpoke.png">
+          <img src="images/pokemons/slowpoke.png" alt="Slowpoke" />
+        </div>
+
+        <div class="pokemon-card" data-type="fogo"
+             data-name="Growlithe" data-altura="0.7 m" data-peso="19 kg"
+             data-categoria="Dog" data-habilidade="Intimidate"
+             data-tipo-icon="🔥" data-fraqueza-icon="💧"
+             data-evo1="images/pokemons/Growlithe.png">
+          <img src="images/pokemons/Growlithe.png" alt="Growlithe" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <h3 id="modal-name"></h3>
+      <div class="modal-info">
+        <p id="modal-altura">Altura: —</p>
+        <p id="modal-peso">Peso: —</p>
+        <p id="modal-categoria">Categoria: —</p>
+        <p id="modal-habilidade">Habilidades: —</p>
+        <p>Tipo: <span id="modal-tipo">—</span></p>
+        <p>Fraqueza: <span id="modal-fraqueza">—</span></p>
+      </div>
+      <div class="modal-evolution" id="modal-evolution"></div>
+    </div>
+  </div>
+
+  <!-- ===== SESSÃO 4 — CARTAS ===== -->
+  <section id="cartas">
+    <div class="cartas-wrapper">
+      <div class="cartas-form-side">
+        <h2>Crie sua<br>própria carta<br>especial</h2>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="carta-nome">Nome da carta:</label>
+            <input type="text" id="carta-nome" />
+          </div>
+          <div class="form-group">
+            <label for="carta-vida">Quantidade de vida:</label>
+            <input type="number" id="carta-vida" />
+          </div>
+          <div class="form-group">
+            <label for="carta-pokemon">Pokemon:</label>
+            <select id="carta-pokemon">
+              <option value="">Selecione o pokemon</option>
+              <option value="bulbasaur">Bulbasaur</option>
+              <option value="charmander">Charmander</option>
+              <option value="squirtle">Squirtle</option>
+              <option value="pikachu">Pikachu</option>
+              <option value="clefairy">Clefairy</option>
+              <option value="eevee">Eevee</option>
+              <option value="snorlax">Snorlax</option>
+              <option value="meowth">Meowth</option>
+              <option value="jigglypuff">Jigglypuff</option>
+              <option value="lapras">Lapras</option>
+              <option value="ponyta">Ponyta</option>
+              <option value="abra">Abra</option>
+              <option value="oddish">Oddish</option>
+              <option value="psyduck">Psyduck</option>
+              <option value="voltorb">Voltorb</option>
+              <option value="krabby">Krabby</option>
+              <option value="pidgey">Pidgey</option>
+              <option value="caterpie">Caterpie</option>
+              <option value="slowpoke">Slowpoke</option>
+              <option value="Growlithe">Growlithe</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="carta-ataque">Ataque:</label>
+            <input type="text" id="carta-ataque" />
+          </div>
+          <div class="form-group">
+            <label for="carta-categoria">Categoria:</label>
+            <select id="carta-categoria">
+              <option value="">Selecione a categoria</option>
+              <option value="Água">Água</option>
+              <option value="Fogo">Fogo</option>
+              <option value="Planta">Planta</option>
+              <option value="Elétrico">Elétrico</option>
+              <option value="Gelo">Gelo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="carta-resistencia">Resistência:</label>
+            <input type="text" id="carta-resistencia" />
+          </div>
+        </div>
+
+        <button class="btn-enviar" id="btn-enviar">Enviar</button>
+      </div>
+
+      <div class="carta-visual-side">
+        <div class="carta-visual">
+          <img class="moldura" src="images/global/card.png" alt="Moldura da carta" />
+          <div class="carta-overlay">
+            <div class="carta-header">
+              <span class="carta-nome" id="carta-display-nome">—</span>
+              <span class="carta-vida-hp" id="carta-display-vida"></span>
+            </div>
+            <div class="carta-img-area">
+              <img src="" alt="" id="carta-pokemon-img" />
+            </div>
+            <div class="carta-stats">
+              <span id="carta-display-categoria"></span>
+              <span id="carta-display-ataque"></span>
+              <span id="carta-display-resistencia"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SESSÃO 5 — FOOTER ===== -->
+  <footer id="footer">
+    <img class="footer-banner" src="images/global/footer-banner.jpg" alt="Banner footer" />
+    <div class="footer-content">
+      <h2 class="footer-title">Explore e divirta-se</h2>
+      <div class="footer-info">
+        <div class="footer-col">
+          <p>1º ano - Engenharia de Software</p>
+          <p>FIAP - Paulista</p>
+          <p>São Paulo - SP</p>
+        </div>
+        <div class="footer-col">
+          <p>Telefone: (12) 3456-7890</p>
+          <p>E-mail: checkpoint@fiap.com.br</p>
+          <p>Redes sociais: @checkpoint</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

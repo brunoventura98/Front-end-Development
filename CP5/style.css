@@ -1,0 +1,619 @@
+:root {
+  --white:      #FBF6F3;
+  --blue:       #6D86DD;
+  --blue-dark:  #27a3ff;
+  --blue-light: #e4ffff;
+  --btn-color:  #7CAAC9;
+  --btn-hover:  #5881AE;
+  --black:      #111;
+  --font-title: 'Press Start 2P', monospace;
+  --font-body:  'Noto Serif', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(251, 246, 243, 0.95);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  border-bottom: 2px solid #ccc;
+}
+
+nav .logo {
+  font-family: var(--font-title);
+  font-size: 0.8rem;
+  color: var(--black);
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a {
+  font-family: var(--font-body);
+  color: var(--black);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--black);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* ===== SESSÃO 1 — INÍCIO ===== */
+
+#inicio {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('./images/global/banner-full.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.inicio-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(39, 163, 255, 0.5), rgba(228, 255, 255, 0.4));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.inicio-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.moldura-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moldura-inicio {
+  width: 380px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.moldura-wrapper h1 {
+  position: absolute;
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  color: var(--black);
+  text-align: center;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 14px 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.btn-start {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 36px;
+  background: var(--white);
+  border: 3px solid var(--black);
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--black);
+  transition: transform 0.1s, box-shadow 0.1s;
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+}
+
+.btn-start:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+/* ===== SESSÃO 2 — INTEGRANTES ===== */
+
+#integrantes {
+  background-color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+}
+
+#integrantes h2 {
+  font-family: var(--font-title);
+  font-size: 3.3rem;
+  color: var(--white);
+  -webkit-text-stroke: 2px var(--black);
+  text-shadow: 4px 4px 0 var(--black);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.character-box {
+  border: 3px solid #555;
+  padding: 24px 48px;
+  background: var(--white);
+  min-width: 340px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.character-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.character-list li {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 8px;
+  cursor: default;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+
+.character-list li .arrow {
+  opacity: 0;
+  font-size: 1.2rem;
+  transition: opacity 0.2s;
+  min-width: 20px;
+}
+
+.character-list li:hover .arrow {
+  opacity: 1;
+}
+
+/* ===== SESSÃO 3 — POKÉMONS ===== */
+
+#pokemons {
+  background-color: var(--blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+}
+
+.pokemons-wrapper {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+  max-width: 1100px;
+  align-items: flex-start;
+}
+
+.pokemons-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 160px;
+}
+
+.pokemons-sidebar h2 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 2rem;
+  margin-bottom: 16px;
+}
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-list li {
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+
+.filter-list li .arrow {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.filter-list li:hover .arrow,
+.filter-list li.active .arrow {
+  opacity: 1;
+}
+
+.filter-list li:hover {
+  color: var(--black);
+}
+
+.filter-list li.active {
+  color: var(--black);
+  font-weight: bold;
+}
+
+.pokemons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.pokemon-card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.pokemon-card.hidden {
+  display: none;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.12);
+}
+
+.pokemon-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.3));
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 480px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-family: var(--font-title);
+  color: var(--black);
+}
+
+.modal h3 {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+  margin-bottom: 20px;
+}
+
+.modal-info p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.modal-evolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.modal-evolution img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.modal-evolution span {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* ===== SESSÃO 4 — CARTAS ===== */
+
+#cartas {
+  background-color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+}
+
+.cartas-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.cartas-form-side {
+  flex: 1;
+}
+
+.cartas-form-side h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  padding: 10px 14px;
+  font-size: 1.15rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--blue);
+}
+
+.btn-enviar {
+  margin-top: 24px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 36px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--btn-hover);
+}
+
+.carta-visual-side {
+  flex: 0 0 380px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carta-visual {
+  position: relative;
+  width: 360px;
+  height: 500px;
+}
+
+.carta-visual .moldura {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.carta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.carta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carta-overlay .carta-nome {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  color: var(--black);
+}
+
+.carta-vida-hp {
+  font-family: var(--font-title);
+  font-size: 0.7rem;
+  color: var(--black);
+}
+
+.carta-img-area {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.carta-img-area img {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.carta-img-area img[src=""] {
+  display: none;
+}
+
+.carta-stats {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.carta-stats span:empty {
+  display: none;
+}
+
+/* ===== SESSÃO 5 — FOOTER ===== */
+
+#footer {
+  background-color: var(--blue);
+}
+
+.footer-banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-content {
+  background-color: var(--blue);
+  padding: 40px 60px;
+}
+
+.footer-title {
+  font-family: var(--font-title);
+  font-size: 2.6rem;
+  letter-spacing: -2px;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.footer-info {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-col p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--white);
+}
